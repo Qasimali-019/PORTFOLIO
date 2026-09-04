@@ -1,0 +1,234 @@
+{
+  "person": {
+    "name": "Qasim Ali",
+    "headline": "Full-Stack Developer | React | Next.js | Node.js | QA & Software Testing",
+    "education": "B.Sc. in Computer Science",
+    "institution": "Air University, Islamabad, Pakistan",
+    "cgpa": "Currently Pursuing",
+    "graduation": "Jun 2027",
+    "email": "qasim.aliii019@gmail.com",
+    "phone": "+92 310 8028536",
+    "linkedin": "https://www.linkedin.com/in/QasimAli",
+    "github": "https://github.com/Qasimali-019"
+  },
+  "skills": {
+    "languages": [
+      "JavaScript (ES6+)",
+      "TypeScript",
+      "C++",
+      "Java",
+      "C#"
+    ],
+    "frontend": [
+      "React.js",
+      "Next.js",
+      "Tailwind CSS",
+      "Vite",
+      "HTML5",
+      "CSS3"
+    ],
+    "backend": [
+      "Node.js",
+      "Express.js",
+      "REST API"
+    ],
+    "databases": [
+      "PostgreSQL",
+      "MySQL",
+      "MSSQL",
+      "SQLite",
+      "Redis"
+    ],
+    "qa_testing": [
+      "Test Case Design",
+      "Bug Tracking & Verification",
+      "Requirements Analysis",
+      "RBAC/Permissions Testing"
+    ],
+    "tools": [
+      "Git",
+      "GitHub",
+      "Docker",
+      "JWT",
+      "Vercel",
+      "Netlify"
+    ]
+  },
+  "experience": [
+    {
+      "role": "Full Stack Developer Intern (QA & Development)",
+      "organization": "Outscalers Pvt Ltd",
+      "period": "Jul 2026 – Present",
+      "mode": "Rawalpindi Saddar, Pakistan (On-site)",
+      "verified_points": [
+        "QA and software testing of web applications, covering test modules, workflows, user roles, and permissions",
+        "Identifying, documenting, and verifying bugs and fixes",
+        "Analyzing requirements to confirm fixes align with expected application behavior",
+        "Contributing to full-stack development on live projects under team guidance"
+      ]
+    },
+    {
+      "role": "Full Stack Developer — Sole Developer",
+      "organization": "superchina.pk (Client)",
+      "period": "Jul 2024 – Sep 2024",
+      "mode": "Quetta, Pakistan",
+      "verified_points": [
+        "Sole developer on a live, production-grade POS and inventory management platform",
+        "Real-time backend in Node.js, Express.js, and MSSQL handling livestock reconciliation, revenue calculations, and COGS tracking",
+        "RBAC for Admin and Cashier roles",
+        "Refund engine that auto-reverses inventory, revenue, and profit while locking processed bills"
+      ]
+    },
+    {
+      "role": "Full Stack Developer — Sole Developer",
+      "organization": "dollarquetta.online (Client)",
+      "period": "2025 – Present",
+      "mode": "Quetta, Pakistan",
+      "verified_points": [
+        "Sole developer on a second live POS and inventory management platform",
+        "Backend and frontend architecture with Node.js, React.js, and PostgreSQL",
+        "Extending the platform with an integrated e-commerce storefront (in development)"
+      ]
+    },
+    {
+      "role": "Full Stack Developer — Sole Developer",
+      "organization": "Siratul Mustaqeem (Client)",
+      "period": "2026 – Present",
+      "mode": "Islamabad, Pakistan",
+      "verified_points": [
+        "Architecting an Islamic guidance and community web app from scratch",
+        "System architecture, UX wireframes, React/TypeScript component hierarchy, and a normalized PostgreSQL schema",
+        "Secure authentication, session management, RBAC, and activity feeds",
+        "Advanced React patterns: custom hooks, Context API, lazy loading"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "superchina.pk — POS & Inventory System",
+      "status": "private",
+      "category": "Full-Stack / Client Project",
+      "github": "https://github.com/Qasimali-019/super-china-pos",
+      "stack": ["TypeScript", "React.js", "Node.js", "Express.js", "MSSQL", "REST API"],
+      "facts": [
+        "real-time inventory sync",
+        "revenue and COGS tracking",
+        "RBAC for Admin/Cashier",
+        "refund engine with bill locking"
+      ]
+    },
+    {
+      "name": "POS-FAHAD — Cash-Only POS System",
+      "status": "private",
+      "category": "Full-Stack / POS",
+      "github": "https://github.com/Qasimali-019/POS-FAHAD",
+      "stack": ["React.js", "TypeScript", "Vite", "Node.js", "Express.js", "PostgreSQL"],
+      "facts": [
+        "immutable original bills",
+        "refund/exchange creates new linked bill or voucher",
+        "transactions post to the day they occur",
+        "high-value refunds auto-flagged for review"
+      ]
+    },
+    {
+      "name": "Siratul Mustaqeem",
+      "status": "private",
+      "category": "Full-Stack / Community Platform",
+      "github": "https://github.com/Qasimali-019/siratulmustaqeem",
+      "stack": ["React.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL"],
+      "facts": [
+        "secure authentication and RBAC",
+        "activity feeds",
+        "custom hooks, Context API, lazy loading"
+      ]
+    },
+    {
+      "name": "Event Bookings",
+      "status": "public",
+      "category": "Full-Stack / Event Management",
+      "github": "https://github.com/Qasimali-019/eventbookings",
+      "stack": ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "JWT", "REST API"],
+      "facts": [
+        "ticketing, attendee check-in, post-event analytics",
+        "email/SMS workflow automation via SendGrid and Twilio",
+        "Redis caching and rate limiting",
+        "four-tier RBAC (User/Admin/Organizer/Host)"
+      ]
+    },
+    {
+      "name": "Attendify AI",
+      "status": "public",
+      "category": "AI / Computer Vision",
+      "github": "https://github.com/Qasimali-019/Attendify-AI",
+      "stack": ["Python"],
+      "facts": [
+        "digital image processing",
+        "face recognition attendance matching from classroom photos"
+      ]
+    },
+    {
+      "name": "OmniDispatch",
+      "status": "public",
+      "category": "Backend / Messaging",
+      "github": "https://github.com/Qasimali-019/OmniDispatch",
+      "stack": ["Python"],
+      "facts": [
+        "batch SMS dispatch",
+        "contact processing",
+        "structured event logging"
+      ]
+    },
+    {
+      "name": "Product Listing App",
+      "status": "public",
+      "category": "Full-Stack / E-Commerce",
+      "github": "https://github.com/Qasimali-019/Product-Listing-App",
+      "stack": ["JavaScript", "React.js", "Node.js"],
+      "facts": [
+        "product listing with dynamic categories",
+        "admin and user roles with protected routes"
+      ]
+    },
+    {
+      "name": "Ticket Management System",
+      "status": "public",
+      "category": "Full-Stack / .NET",
+      "github": "https://github.com/Qasimali-019/TicketManagementSystem",
+      "stack": [".NET 8", "Blazor", "Razor Pages", "SQL Server"],
+      "facts": [
+        "full CRUD ticket workflow"
+      ]
+    },
+    {
+      "name": "MacroMaster AI",
+      "status": "public",
+      "category": "AI / Mobile",
+      "github": "https://github.com/Qasimali-019/MacroMasterAi-App",
+      "stack": ["Dart", "Flutter"],
+      "facts": [
+        "AI-driven macro automation",
+        "cross-platform mobile app"
+      ]
+    },
+    {
+      "name": "Shopping Management System",
+      "status": "public",
+      "category": "C++ / Systems",
+      "github": "https://github.com/Qasimali-019/Shopping-management-system",
+      "stack": ["C++"],
+      "facts": [
+        "inventory and transaction management"
+      ]
+    }
+  ],
+  "achievements": [],
+  "certifications": [],
+  "grounding": {
+    "allowed_scope": "Questions about Qasim and his verified portfolio.",
+    "unknown_response": "I don't have verified information about that.",
+    "unrelated_response": "I'm Ask Qasim, so I only answer questions about Qasim and his work.",
+    "future_rule": "Never state an unverified future event as a fact. Distinguish goals/plans from guaranteed outcomes.",
+    "private_rule": "Do not expose private repository URLs or private project details as public resources.",
+    "concise": true
+  }
+}
