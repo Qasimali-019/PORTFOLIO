@@ -195,9 +195,9 @@ export function Projects() {
                         <Github size={15} />
                       </a>
                     )}
-                    {project.demo && (
+                    {project.url && (
                       <a
-                        href={project.demo}
+                        href={project.url}
                         target="_blank"
                         rel="noreferrer"
                         className="p-2 bg-white/5 hover:bg-white/15 text-white/70 hover:text-white rounded-lg transition-colors"
