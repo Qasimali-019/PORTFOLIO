@@ -46,7 +46,7 @@ ${projects
         project.purpose
       } Tech: ${project.stack.join(", ")}. Facts: ${project.facts.join(", ")}.${
         project.github ? ` GitHub: ${project.github}` : ""
-      }${project.demo ? ` Demo: ${project.demo}` : ""}${
+      }${project.url ? ` Demo: ${project.url}` : ""}${
         project.limitations ? ` Limitation: ${project.limitations}` : ""
       }`
   )
