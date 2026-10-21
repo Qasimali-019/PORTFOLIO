@@ -40,7 +40,7 @@ export interface Project {
   category: string;
   purpose: string;
   github?: string;
-  demo?: string;
+  url?: string;
   stack: string[];
   facts: string[];
   limitations?: string;
@@ -151,6 +151,24 @@ export const experience: Experience[] = [
 
 export const projects: Project[] = [
   // ─── Client / Private Work ──────────────────────────────────────────────
+
+  {
+    id: "siratulmustaqeem",
+    name: "Siratul Mustaqeem",
+    status: "Live",
+    category: "Full-Stack / Community Platform",
+    purpose:
+      "Islamic guidance and community web app architected from scratch — system design, UX wireframes, and a fully normalized PostgreSQL schema.",
+    github: "https://github.com/Qasimali-019/siratulmustaqeem",
+    url: "https://siratal-mustaqeem.org/",
+    stack: ["React.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL"],
+    facts: [
+      "Secure authentication, session management, and RBAC",
+      "Activity feeds and advanced React patterns: custom hooks, Context API, lazy loading",
+    ],
+    screenshots: [],
+  },
+
   {
     id: "super-china-pos",
     name: "superchina.pk — POS & Inventory System",
@@ -183,29 +201,16 @@ export const projects: Project[] = [
     ],
     screenshots: [],
   },
-  {
-    id: "siratulmustaqeem",
-    name: "Siratul Mustaqeem",
-    status: "In Development (Private)",
-    category: "Full-Stack / Community Platform",
-    purpose:
-      "Islamic guidance and community web app architected from scratch — system design, UX wireframes, and a fully normalized PostgreSQL schema.",
-    github: "https://github.com/Qasimali-019/siratulmustaqeem",
-    stack: ["React.js", "TypeScript", "Node.js", "Express.js", "PostgreSQL"],
-    facts: [
-      "Secure authentication, session management, and RBAC",
-      "Activity feeds and advanced React patterns: custom hooks, Context API, lazy loading",
-    ],
-    screenshots: [],
-  },
+
   {
     id: "eventbookings",
     name: "Event Bookings",
-    status: "Live",
+    status: "Portfolio Project",
     category: "Full-Stack / Event Management",
     purpose:
       "Smart event management platform supporting in-person, virtual, and hybrid events with ticketing, attendee check-in, and post-event analytics.",
     github: "https://github.com/Qasimali-019/eventbookings",
+    url: "https://eventbookings.vercel.app",
     stack: ["React.js", "Node.js", "Express.js", "MongoDB", "Redis", "JWT", "REST API"],
     facts: [
       "Workflow automation engine triggering email/SMS via SendGrid and Twilio",
@@ -219,7 +224,7 @@ export const projects: Project[] = [
   {
     id: "attendify-ai",
     name: "Attendify AI",
-    status: "Live",
+    status: "Portfolio Project",
     category: "AI / Computer Vision",
     purpose:
       "Smart attendance system using digital image processing and face recognition to identify students from a classroom photo.",
@@ -234,7 +239,7 @@ export const projects: Project[] = [
   {
     id: "omnidispatch",
     name: "OmniDispatch",
-    status: "Live",
+    status: "Portfolio Project",
     category: "Backend / Messaging",
     purpose:
       "Backend-first messaging delivery service supporting batch SMS dispatch, contact processing, and structured event logging.",
@@ -249,7 +254,7 @@ export const projects: Project[] = [
   {
     id: "product-listing-app",
     name: "Product Listing App",
-    status: "Live",
+    status: "Portfolio Project",
     category: "Full-Stack / E-Commerce",
     purpose:
       "Complete e-commerce workflow demo with product listings, dynamic categories, and role-protected admin features.",
@@ -265,7 +270,7 @@ export const projects: Project[] = [
   {
     id: "ticket-management-system",
     name: "Ticket Management System",
-    status: "Live",
+    status: "Portfolio Project",
     category: "Full-Stack / .NET",
     purpose:
       "Web-based ticket management system built on the .NET stack with Blazor and Razor Pages.",
@@ -280,7 +285,7 @@ export const projects: Project[] = [
   {
     id: "macromaster-ai",
     name: "MacroMaster AI",
-    status: "Live",
+    status: "Semester Project",
     category: "AI / Mobile",
     purpose:
       "Flutter-based mobile app that uses AI to automate workflows and simplify complex tasks through intelligent macros.",
@@ -295,7 +300,7 @@ export const projects: Project[] = [
   {
     id: "shopping-management-system",
     name: "Shopping Management System",
-    status: "Live",
+    status: "Semester Project",
     category: "C++ / Systems",
     purpose:
       "Comprehensive C++ supermarket management application handling inventory, customer transactions, and admin tasks for a retail environment.",
@@ -315,7 +320,7 @@ export const skills: Skill[] = [
   {
     category: "Programming Languages",
     icon: "code",
-    items: ["JavaScript (ES6+)", "TypeScript", "C++", "Java", ],
+    items: ["JavaScript (ES6+)", "TypeScript", "C++", "Java",],
   },
   {
     category: "Frontend",
@@ -325,7 +330,7 @@ export const skills: Skill[] = [
   {
     category: "Backend",
     icon: "server",
-    items: ["Node.js", "Express.js",  "REST API"],
+    items: ["Node.js", "Express.js", "REST API"],
   },
   {
     category: "Databases",

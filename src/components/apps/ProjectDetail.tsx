@@ -14,35 +14,34 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
       {/* Hero section */}
       <div className="relative h-[40vh] min-h-[300px] w-full bg-gradient-to-b from-gray-900 to-black">
         {project.screenshots[0] ? (
-          <img 
+          <img
             src={project.screenshots[0].src}
-            alt={project.name} 
-            className="w-full h-full object-cover opacity-40" 
+            alt={project.name}
+            className="w-full h-full object-cover opacity-40"
           />
         ) : (
           <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 to-purple-900/40" />
         )}
         <div className="absolute inset-0 bg-gradient-to-t from-[#1e1e1e] via-transparent to-black/50" />
-        
+
         {/* Navigation & Title */}
         <div className="absolute inset-0 p-8 flex flex-col justify-between">
-          <button 
+          <button
             onClick={onBack}
             className="flex items-center gap-2 w-fit px-4 py-2 bg-black/40 hover:bg-black/60 backdrop-blur-md rounded-full text-white/90 transition-colors border border-white/10"
           >
             <ArrowLeft size={18} /> Back to Projects
           </button>
-          
+
           <div className="max-w-4xl mx-auto w-full mb-4">
             <div className="flex items-center gap-3 mb-3">
               <span className="px-3 py-1 bg-white/10 backdrop-blur-md rounded-full text-sm text-white/90 border border-white/10">
                 {project.category}
               </span>
-              <span className={`px-3 py-1 rounded-full text-sm font-semibold backdrop-blur-md ${
-                project.status === "Live" ? "bg-green-500/20 text-green-300 border border-green-500/30" :
+              <span className={`px-3 py-1 rounded-full text-sm font-semibold backdrop-blur-md ${project.status === "Live" ? "bg-green-500/20 text-green-300 border border-green-500/30" :
                 project.status === "WIP" ? "bg-yellow-500/20 text-yellow-300 border border-yellow-500/30" :
-                "bg-gray-500/40 text-gray-200 border border-gray-500/30"
-              }`}>
+                  "bg-gray-500/40 text-gray-200 border border-gray-500/30"
+                }`}>
                 {project.status}
               </span>
             </div>
@@ -60,9 +59,9 @@ export function ProjectDetail({ project, onBack }: ProjectDetailProps) {
               <Github size={20} /> View Source
             </a>
           )}
-          {project.demo && (
-            <a href={project.demo} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-xl transition-colors font-medium text-white shadow-lg shadow-blue-900/20">
-              <ExternalLink size={20} /> Live Demo
+          {project.url && (
+            <a href={project.url} target="_blank" rel="noreferrer" className="flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-500 rounded-xl transition-colors font-medium text-white shadow-lg shadow-blue-900/20">
+              <ExternalLink size={20} /> Live URL
             </a>
           )}
         </div>

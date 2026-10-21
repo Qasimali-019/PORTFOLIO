@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import { Download, ZoomIn, ZoomOut, ExternalLink } from 'lucide-react';
 
 export default function Resume() {
-  const resumeUrl = '/assets/resume/qasim.pdf';
+  const resumeUrl = '/assets/resume/Qasim_Ali_Resume.pdf';
   const [zoom, setZoom] = useState(100);
   const [hasError, setHasError] = useState(false);
 
@@ -14,7 +14,7 @@ export default function Resume() {
         <div className="flex items-center gap-4">
           <span className="text-sm font-medium hidden sm:inline-block">qasim.pdf</span>
         </div>
-        
+
         <div className="flex items-center gap-2">
           <button
             onClick={() => setZoom(Math.max(50, zoom - 10))}
@@ -69,11 +69,11 @@ export default function Resume() {
             </a>
           </div>
         ) : (
-          <div 
+          <div
             className="relative bg-white shadow-2xl transition-transform duration-200 origin-top"
-            style={{ 
-              width: '100%', 
-              maxWidth: '800px', 
+            style={{
+              width: '100%',
+              maxWidth: '800px',
               aspectRatio: '1/1.414',
               transform: `scale(${zoom / 100})`,
               transformOrigin: 'top center'
